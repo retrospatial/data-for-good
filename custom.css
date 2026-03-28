@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap");
+
+:root {
+  --color-blue: #66d9ef;
+  --color-green: #a6e22e;
+  --color-purple: #ae81ff;
+  --color-orange: #fd971f;
+  --color-red: #f92672;
+  --color-yellow: #e6db74;
+  --color-white: #f8f8f2;
+  --color-grey: #75715e;
+}
+
+.reveal {
+  background-color: #181818;
+  font-family: "Spline Sans", sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  font-family: "Spline Sans", sans-serif;
+  color: var(--color-white);
+}
+
+/* image gallery */
+
+.gallery {
+  position: relative;
+  height: 450px;
+  margin-top: 40px;
+}
+
+.gallery img {
+  position: absolute;
+  width: 45%;
+  height: auto !important;
+  border: 3px solid var(--color-white);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-1 img:nth-child(1) {
+  top: 0;
+  left: 3%;
+  transform: rotate(-3deg);
+  z-index: 3;
+}
+
+.gallery-1 img:nth-child(2) {
+  top: 20px;
+  left: 30%;
+  transform: rotate(2deg);
+  z-index: 2;
+}
+
+.gallery-1 img:nth-child(3) {
+  top: 40px;
+  left: 55%;
+  transform: rotate(-1deg);
+  z-index: 1;
+}
+
+.gallery-2 img {
+  border-color: #000;
+}
+
+.gallery-2 img:nth-child(1) {
+  top: 30px;
+  left: 0%;
+  transform: rotate(1deg);
+  z-index: 2;
+}
+
+.gallery-2 img:nth-child(2) {
+  top: 0;
+  left: 25%;
+  transform: rotate(-2deg);
+  z-index: 3;
+}
+
+.gallery-2 img:nth-child(3) {
+  top: 20px;
+  left: 55%;
+  transform: rotate(1.5deg);
+  z-index: 1;
+}
+
+.gallery-3 img:nth-child(1) {
+  top: 10px;
+  left: 0%;
+  transform: rotate(-1deg);
+  z-index: 3;
+}
+
+.gallery-3 img:nth-child(2) {
+  top: 0px;
+  left: 48%;
+  transform: rotate(-1.5deg);
+  z-index: 2;
+}
+
+.gallery-3 img:nth-child(3) {
+  top: 180px;
+  left: 56%;
+  transform: rotate(2deg);
+  z-index: 1;
+}
+
+.gallery-4 img:nth-child(1) {
+  top: 20px;
+  left: 0%;
+  transform: rotate(-1.5deg);
+  z-index: 2;
+}
+
+.gallery-4 img:nth-child(2) {
+  top: 100px;
+  left: 28%;
+  transform: rotate(1deg);
+  z-index: 3;
+}
+
+.gallery-4 img:nth-child(3) {
+  top: 0;
+  left: 54%;
+  transform: rotate(3deg);
+  z-index: 1;
+}

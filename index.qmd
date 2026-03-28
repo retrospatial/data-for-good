@@ -1,0 +1,489 @@
+<!-- quarto preview index.qmd -->
+<!-- S to toggle speaker notes, F to go back to full screen -->
+
+---
+title: '<span style="color: var(--color-blue);">Data Storytelling<br>for the Public Good</span>'
+author: "Florina Sutanto"
+format:
+  revealjs:
+    theme: night
+    css: custom.css
+    center: true
+    highlight-style: monokai
+    transition: none
+---
+
+I am an Interactive Engineer at Citizen Codex, a data innovation studio.
+
+[I make <span style="color: var(--color-blue);">stories</span> and <span style="color: var(--color-green);">graphics</span>]{.fragment .fade-in} [with <span style="color: var(--color-purple);">data</span>]{.fragment .fade-in} [for the <span style="color: var(--color-orange);">web</span>.]{.fragment .fade-in}
+
+::: {.notes}
+Kind of a vague title, but in essence: I make data stories and graphics for the web.
+
+I do a lot of data-driven research and storytelling at Citizen Codex, both for our internal publication and for client projects. Involves data analysis, writing, research, interactive design, web development, etc.
+:::
+
+# <span style="color: var(--color-blue);">Stories</span> I've worked on: 
+
+::: {.gallery .gallery-1}
+![](images/pudding1.png)
+![](images/pudding2.png)
+![](images/pudding3.png)
+:::
+
+::: {.notes}
+This was a story I did with The Pudding my senior year of college. They're one of the best data journalism publications out there and do a lot of fun stories. 
+
+Shipping and fanfiction, using data from a fanfiction archive. 
+:::
+
+# <span style="color: var(--color-blue);">Stories</span> I've worked on: 
+
+::: {.gallery .gallery-2}
+![](images/books2.png)
+![](images/books1.png)
+![](images/books3.png)
+:::
+
+::: {.notes}
+My first project when I started as an intern at CC. Tracking the rise of book bans across the US and the organized groups behind them.
+:::
+
+# <span style="color: var(--color-blue);">Stories</span> I've worked on: 
+
+::: {.gallery .gallery-3}
+![](images/recession1.png)
+![](images/recession2.png)
+![](images/recession3.png)
+:::
+
+::: {.notes}
+Looking at the 'recession pop' phenomenon -- how dancey, high-energy music would top the charts during or right after recessions.
+:::
+
+# <span style="color: var(--color-blue);">Stories</span> I've worked on:
+
+::: {.gallery .gallery-4}
+![](images/brazil2.png)
+![](images/brazil1.png)
+![](images/brazil3.png)
+:::
+
+::: {.notes}
+Cancer rates in Brazil for a global health non profit. So more academic and we pulled from research papers.
+:::
+
+# What makes a good 'data story'?
+
+::: {.notes}
+Not every story needs data to be told. Numbers and charts are tools for communicating information, just like paragraphs and images are, and it's important to consider how and when to deploy them in a way that's meaningful and engaging.
+:::
+
+## First, start with:
+
+[A question or a problem]{.fragment .fade-in data-fragment-index="1"}
+
+[A gap in knowledge or information]{.fragment .fade-in data-fragment-index="2"}
+
+[An observation]{.fragment .fade-in data-fragment-index="3"}
+
+::: {.notes}
+Question: Why is this happening? What's causing it? How long has this been happening?
+
+Gap: Nobody has looked at it at this angle before
+
+Observation: Very interesting, because often it comes from you and what you notice
+:::
+
+---
+
+![](images/vogue1.png){style="max-width: 500px; display: block; margin: 0 auto; margin-bottom: 20px;"}
+![](images/vogue2.png){style="max-width: 500px; display: block; margin: 0 auto;"}
+
+::: {.notes}
+This author noticed that recent Vogue covers have less text than they did a decade ago. They looked at every Vogue cover and measured how much physical space the text on the covers took up.
+:::
+
+---
+
+:::: {.columns style="display: flex; align-items: center; justify-content: center;"}
+
+::: {.column width="50%"}
+![](images/strava.jpg)
+:::
+
+::: {.column width="50%"}
+![](images/strava2.jpg)
+:::
+
+::::
+
+::: {.notes}
+Strava heatmap of Baltimore. These brighter lines indicate higher activity -- more runners there. Noticed that this maps to the 'white L', predominantly white, wealthy area in Baltimore, while the surrounding darker areas are Black neighborhoods.
+
+Just these two maps tell an entire story.
+
+Sometimes all it takes is taking a closer look at a thing or environment you already know.
+:::
+
+## Then consider:
+
+[Is this story interesting or worth telling?]{.fragment .fade-in}
+
+[Does the data exist? If not, can I collect it?]{.fragment .fade-in}
+
+[Is data viz the right medium to convey this information?]{.fragment .fade-in}
+
+[Who is my audience?]{.fragment .fade-in}
+
+::: {.notes}
+So whenever I approach a new story, I go through this mental checklist:
+
+- Either for you, for your organization, or for other people. What's driving you to tell this story?
+- This is a question I imagine all of you have asked yourselves. Often this is where we have to pivot
+- This entirely depends on the story. Sometimes eyewitness accounts, case studies, photographs can go a longer way
+- More technical, less technical? Put yourself in their shoes -- without context other than what they're looking at, how might they interpret it?
+:::
+
+# 1. Collecting data
+
+---
+
+:::: {.columns style="display: flex; align-items: center; justify-content: center;"}
+
+::: {.column width="50%"}
+![](images/dataset1.png)
+:::
+
+::: {.column width="50%"}
+![](images/dataset2.png)
+
+![](images/dataset3.png)
+:::
+
+::::
+
+::: {.notes}
+Classic datasets -- census, kaggle, open data. Really rich and comprehensive sources; not just because of what they contain but how they were formed, structured, and updated
+:::
+
+---
+
+:::: {.columns style="display: flex; align-items: center; justify-content: center;"}
+
+::: {.column width="50%"}
+![](images/heat1.jpg)
+:::
+
+::: {.column width="50%"}
+![](images/heat2.jpg)
+:::
+
+::::
+
+::: {.notes}
+Maps/cartography
+
+
+NYT: literal heatmap of neighborhoods in Richmond, VA. They measured shade coverage and heat in different neighborhoods and compared this map to old redline maps.
+
+Redlining is a practice where neighborhoods would be graded based on their desirability and risk -- often as a discriminatory practice against Black neighborhoods. Banks and companies could use this to deny loans and services to these areas.
+
+Overlap.
+:::
+
+---
+
+:::: {.columns style="display: flex; align-items: center; justify-content: center;"}
+
+::: {.column width="50%"}
+![](images/moms1.png)
+![](images/moms2.png)
+:::
+
+::: {.column width="50%" .fragment .fade-in}
+![](images/moms3.png)
+![](images/moms4.png)
+:::
+
+::::
+
+::: {.notes}
+I was looking at Moms for Liberty and wanted to know where their chapters were located and when they were created, so I could measure the degree of their influence on book bans.
+
+Data didn't exist, so I went to their Facebook and set up a scraper to collect this data.
+:::
+
+---
+
+:::: {.columns style="display: flex; align-items: center; justify-content: center;"}
+
+::: {.column width="50%"}
+![](images/pockets1.png)
+:::
+
+::: {.column width="50%"}
+![](images/pockets2.png)
+![](images/pockets3.png)
+:::
+
+::::
+
+::: {.notes}
+Collecting data by hand -- The Pudding went out to department stores and measured pockets in women's vs men's pants and aggregated them.
+:::
+
+
+# 2. Synthesizing data
+
+---
+
+![](images/stats.jpg){style="display: block; margin: 0 auto;"}
+
+---
+
+What trends can you identify? What changed? _Why_ did it change?
+
+---
+
+![](images/buffy.png){style="display: block; margin: 0 auto;"}
+
+[Something changed. But slapping annotations on the chart didn't do a whole lot.]{.fragment .fade-in data-fragment-index="1" style="text-align: center; display: block; margin-top: 20px;"} 
+
+---
+
+## Challenge: We have three housing datasets that we want to merge by matching up addresses.
+(AKA entity resolution)
+
+&nbsp;
+
+::: {.fragment .fade-in}
+### But the addresses look like this:
+
+:::: {.columns}
+
+::: {.column width="25%"}
+[100 Fairview Ave]{style="font-size: 0.8em; border-bottom: 1px solid var(--color-white); padding:"}
+:::
+
+::: {.column width="38%"}
+[100 Fairview Avenue North]{style="font-size: 0.8em; border-bottom: 1px solid var(--color-white); padding: 0px 2px;"}
+:::
+
+::: {.column width="27%"}
+[100 Fairview Ave N]{style="font-size: 0.8em; border-bottom: 1px solid var(--color-white); padding: 0px 2px;"}
+:::
+
+::::
+:::
+
+## {data-background-color="white"}
+
+![](images/matching.png){style="display: block; margin: 0 auto;"}
+
+# 3. Designing good data viz
+
+---
+
+[Communicate information clearly and concisely]{.fragment .fade-in}
+
+[Be conscious of cognitive load]{.fragment .fade-in}
+
+[Have a point of view]{.fragment .fade-in}
+
+[Be delightful]{.fragment .fade-in}
+
+::: {.notes}
+Cognitive load: how much effort it takes to understand the information? design systems, ease of interaction and interpretability
+:::
+
+
+---
+
+![](images/rentmadness.png){style="display: block; margin: 0 auto;"}
+
+--- 
+
+:::: {.columns style="display: flex; align-items: center; justify-content: center;"}
+
+::: {.column width="50%"}
+![](images/vital1.png)
+:::
+
+::: {.column width="50%"}
+![](images/vital2.png)
+![](images/vital3.png)
+:::
+
+::::
+
+
+---
+
+![](images/vital4.png){style="display: block; margin: 0 auto;"}
+
+::: {.notes}
+Cognitive load
+:::
+
+# 3. Designing <span style="font-style: italic; color: var(--color-green);">great</span> data viz
+
+::: {.notes}
+You can break these rules. But the beauty of data viz is that there's creative interpretation involved, and sometimes the most straightforward way to communicate information doesn't always tell the best story.
+:::
+
+---
+
+:::: {.columns style="display: flex; align-items: center; justify-content: center;"}
+
+::: {.column width="50%"}
+![](images/iraq1.webp)
+:::
+
+::: {.column width="50%"}
+[![](images/iraq2.webp)]{.fragment .fade-in data-fragment-index="1"}
+:::
+
+::::
+
+::: {.notes}
+This one predisposes me to think about the data positively.
+:::
+
+---
+
+![](images/strangers.png)
+
+---
+
+![](images/giorgia2.jpg){style="max-width: 500px; display: block; margin: 0 auto; margin-bottom: 20px;"}
+![](images/giorgia.jpg){style="max-width: 500px; display: block; margin: 0 auto;"}
+
+## We want to create responsible, <span style="color: var(--color-green); font-style: italic;">human</span> data viz
+
+# 4. Developing for the web
+
+## Toolkit
+
+:::: {.columns style="display: flex; justify-content: center;"}
+
+::: {.column width="50%"}
+**Code:**
+
+- SvelteKit
+- d3.js
+- Observable Plot
+- Layer Cake
+- gsap
+:::
+
+::: {.column width="50%"}
+**No-code:**
+
+- Flourish
+- Google Sheets/Excel
+- Datawrapper
+- RAWGraphs
+- Tableau
+:::
+
+::::
+
+::: {.notes}
+The final question is: how do I get this on the web so that other people can read and interact with it?
+:::
+
+---
+
+:::: {.columns style="display: flex; align-items: center; justify-content: center;"}
+
+::: {.column width="50%"}
+![](images/nocode1.png)
+:::
+
+::: {.column width="50%"}
+![](images/nocode2.png)
+:::
+
+::::
+
+---
+
+[You Draw It: Just How Bad<br>Is the Drug Overdose Epidemic?]{style="text-align: center; display: block; margin-bottom: 20px;"}
+
+![](images/youdraw.png){style="display: block; margin: 0 auto;"}
+
+# Data stories for the <span style="color: var(--color-purple);">public good</span>
+
+## Rent Madness {style="text-align: center;"}
+
+:::: {.columns style="display: flex; align-items: center; justify-content: center;"}
+
+::: {.column width="50%"}
+![](images/rent1.png)
+:::
+
+::: {.column width="50%"}
+![](images/rent2.png)
+:::
+
+::::
+
+---
+
+![](images/rent3.png){style="display: block; margin: 0 auto;"}
+
+
+## Agencies, publications, and newsrooms:
+
+:::: {.columns style="display: flex; align-items: start; "}
+
+::: {.column width="50%"}
+- The Pudding
+- The DataFace
+- The Markup
+- ProPublica
+:::
+
+::: {.column width="50%"}
+
+- The New York Times: The Upshot, NYT Graphics, etc.
+- The Straits Times
+- South China Morning Post
+- Us!
+:::
+
+::::
+
+## {data-background-color="white"}
+
+![](images/fellow.png){style="display: block; margin: 0 auto;"}
+
+## People/accounts I follow for inspo:
+
+- Alvin Chang
+- Gurman Bhatia
+- Aman Bhargava
+- Information is Beautiful Awards
+- The Pudding Cup
+
+--- 
+
+References:
+
+<div style="font-size: 0.5em;">
+
+- [Since When Does Vogue Hate Text?](https://mag-text.vercel.app/) by Jess Carr
+- [Baltimore’s So Segregated, Even Strava Shows It. These Runners Want to Change That](https://www.runnersworld.com/runners-stories/a26131774/baltimore-segregated-strava-heatmap/) by Robbe Reddinger
+- [Two Baltimores: The “Black Butterfly” and The “White L”](https://www.religionandcities.org/hope-baltimores) by Center for Religion and Cities
+- [How Decades of Racist Housing Policy Left Neighborhoods Sweltering](https://www.nytimes.com/interactive/2020/08/24/climate/racism-redlining-cities-global-warming.html) by The New York Times
+- [Women's Pockets are Inferior](https://pudding.cool/2018/08/pockets/) by The Pudding
+- [Iraq’s Bloody Toll](https://www.simonscarr.com/iraqs-bloody-toll) by Simon Scarr
+- [Iraq’s Bloody Toll: control your message with title, colour and orientation](https://gravyanecdote.com/uncategorized/should-you-trust-a-data-visualisation/) by Andy Cotgreave
+- [30 minutes with a stranger](https://pudding.cool/2025/06/hello-stranger/) by Alvin Chang
+- [My Life with Long Covid](https://www.nytimes.com/interactive/2023/12/14/opinion/my-life-with-long-covid.html) by Giorgia Lupi
+- [How to recreate our charts without code](https://pudding.cool/process/no-code-charts/) by The Pudding
+- [Rent Madness](https://rentmadness.citizencodex.com/) by Citizen Codex
+
+
+</div>
