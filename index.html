@@ -455,7 +455,20 @@ Florina Sutanto
 <section class="slide level2 center">
 
 
-<img data-src="images/stats.jpg" style="display: block; margin: 0 auto;" class="r-stretch"></section>
+<img data-src="images/stats.jpg" style="display: block; margin: 0 auto;" class="r-stretch"><aside class="notes">
+<p>descriptive statistics – i always do this as a first pass to see, even on the surface, if anything immediately jumps out at me</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section class="slide level2 center">
 
 <p>What trends can you identify? What changed? <em>Why</em> did it change?</p>
@@ -463,10 +476,23 @@ Florina Sutanto
 <section class="slide level2 center">
 
 
-<img data-src="images/buffy.png" style="display: block; margin: 0 auto;" class="r-stretch"><p><span class="fragment fade-in" data-fragment-index="1" style="text-align: center; display: block; margin-top: 20px;">Something changed. But slapping annotations on the chart didn’t do a whole lot.</span></p>
+<img data-src="images/buffy.png" style="display: block; margin: 0 auto;" class="r-stretch"><p><span class="fragment fade-in" data-fragment-index="1" style="text-align: center; display: block; margin-top: 20px;">Something changed. But slapping annotations on the chart didn’t reveal a whole lot.</span></p>
+<aside class="notes">
+<p>Ba careful to not attribute false positives.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="challenge-we-have-three-housing-datasets-that-we-want-to-merge-by-matching-up-addresses." class="slide level2 center">
-<h2>Challenge: We have three housing datasets that we want to merge by matching up addresses.</h2>
+<section id="challenge-we-have-three-housing-datasets-that-we-want-to-merge-by-matching-up-the-addresses." class="slide level2 center">
+<h2>Challenge: We have three housing datasets that we want to merge by matching up the addresses.</h2>
 <p>(AKA entity resolution)</p>
 <p>&nbsp;</p>
 <div class="fragment fade-in">
@@ -480,11 +506,37 @@ Florina Sutanto
 <p><span style="font-size: 0.8em; border-bottom: 1px solid var(--color-white); padding: 0px 2px;">100 Fairview Ave N</span></p>
 </div></div>
 </div>
+<aside class="notes">
+<p>Are these the same addresses? They could not be. There could actually be two different 100 Fairview Ave North addresses in the same city. Just doing string matching would not be enough.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="section" class="slide level2 center" data-background-color="white">
 <h2></h2>
 
-<img data-src="images/matching.png" style="display: block; margin: 0 auto;" class="r-stretch"></section></section>
+<img data-src="images/matching.png" style="display: block; margin: 0 auto;" class="r-stretch"><aside class="notes">
+<p>This was the solution we came up with: we used shapefiles (geographic vector data) in the data to roughly match up the geolocations, and then within that overlap used fuzzy matching on the address strings.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
 <section>
 <section id="designing-good-data-viz" class="title-slide slide level1 center">
 <h1>3. Designing good data viz</h1>
@@ -498,6 +550,7 @@ Florina Sutanto
 <p><span class="fragment fade-in">Be delightful</span></p>
 <aside class="notes">
 <p>Cognitive load: how much effort it takes to understand the information? design systems, ease of interaction and interpretability</p>
+<p>POV: It would be dishonest to say that data viz can be completely objective – how we design, how we title, the colors we choose, all choices made with a point of view.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -582,7 +635,20 @@ Florina Sutanto
 <section class="slide level2 center">
 
 
-<img data-src="images/strangers.png" class="r-stretch"></section>
+<img data-src="images/strangers.png" class="r-stretch"><aside class="notes">
+<p>Researchers put strangers together to have a conversation and see what what comes out. ASCII (as-key) art to humanize these anonymous people and their conversation – this is data but portrayed in a very creative way.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section class="slide level2 center">
 
 <p><img data-src="images/giorgia2.jpg" style="max-width: 500px; display: block; margin: 0 auto; margin-bottom: 20px;"> <img data-src="images/giorgia.jpg" style="max-width: 500px; display: block; margin: 0 auto;"></p>
@@ -615,6 +681,7 @@ Florina Sutanto
 <li>Datawrapper</li>
 <li>RAWGraphs</li>
 <li>Tableau</li>
+<li>AI2HTML</li>
 </ul>
 </div></div>
 <aside class="notes">
@@ -635,6 +702,15 @@ Florina Sutanto
 
 <div class="columns" style="display: flex; align-items: center; justify-content: center;">
 <div class="column" style="width:50%;">
+<p><img data-src="images/revenue1.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/revenue2.png"></p>
+</div></div>
+</section>
+<section class="slide level2 center">
+
+<div class="columns" style="display: flex; align-items: center; justify-content: center;">
+<div class="column" style="width:50%;">
 <p><img data-src="images/nocode1.png"></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/nocode2.png"></p>
@@ -644,7 +720,20 @@ Florina Sutanto
 
 <p><span style="text-align: center; display: block; margin-bottom: 20px;">You Draw It: Just How Bad<br>Is the Drug Overdose Epidemic?</span></p>
 
-<img data-src="images/youdraw.png" style="display: block; margin: 0 auto;" class="r-stretch"></section></section>
+<img data-src="images/youdraw.png" style="display: block; margin: 0 auto;" class="r-stretch"><aside class="notes">
+<p>Interactivity allows you to draw the reader in and participate in the story.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
 <section>
 <section id="data-stories-for-the-public-good" class="title-slide slide level1 center">
 <h1>Data stories for the <span style="color: var(--color-purple);">public good</span></h1>

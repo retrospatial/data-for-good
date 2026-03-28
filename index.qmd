@@ -240,6 +240,10 @@ Collecting data by hand -- The Pudding went out to department stores and measure
 
 ![](images/stats.jpg){style="display: block; margin: 0 auto;"}
 
+::: {.notes}
+descriptive statistics -- i always do this as a first pass to see, even on the surface, if anything immediately jumps out at me
+:::
+
 ---
 
 What trends can you identify? What changed? _Why_ did it change?
@@ -248,11 +252,15 @@ What trends can you identify? What changed? _Why_ did it change?
 
 ![](images/buffy.png){style="display: block; margin: 0 auto;"}
 
-[Something changed. But slapping annotations on the chart didn't do a whole lot.]{.fragment .fade-in data-fragment-index="1" style="text-align: center; display: block; margin-top: 20px;"} 
+[Something changed. But slapping annotations on the chart didn't reveal a whole lot.]{.fragment .fade-in data-fragment-index="1" style="text-align: center; display: block; margin-top: 20px;"} 
+
+::: {.notes}
+Ba careful to not attribute false positives.
+:::
 
 ---
 
-## Challenge: We have three housing datasets that we want to merge by matching up addresses.
+## Challenge: We have three housing datasets that we want to merge by matching up the addresses.
 (AKA entity resolution)
 
 &nbsp;
@@ -277,9 +285,17 @@ What trends can you identify? What changed? _Why_ did it change?
 ::::
 :::
 
+::: {.notes}
+Are these the same addresses? They could not be. There could actually be two different 100 Fairview Ave North addresses in the same city. Just doing string matching would not be enough.
+:::
+
 ## {data-background-color="white"}
 
 ![](images/matching.png){style="display: block; margin: 0 auto;"}
+
+::: {.notes}
+This was the solution we came up with: we used shapefiles (geographic vector data) in the data to roughly match up the geolocations, and then within that overlap used fuzzy matching on the address strings. 
+:::
 
 # 3. Designing good data viz
 
@@ -295,6 +311,8 @@ What trends can you identify? What changed? _Why_ did it change?
 
 ::: {.notes}
 Cognitive load: how much effort it takes to understand the information? design systems, ease of interaction and interpretability
+
+POV: It would be dishonest to say that data viz can be completely objective -- how we design, how we title, the colors we choose, all choices made with a point of view.
 :::
 
 
@@ -354,6 +372,10 @@ This one predisposes me to think about the data positively.
 
 ![](images/strangers.png)
 
+::: {.notes}
+Researchers put strangers together to have a conversation and see what what comes out. ASCII (as-key) art to humanize these anonymous people and their conversation -- this is data but portrayed in a very creative way.
+:::
+
 ---
 
 ![](images/giorgia2.jpg){style="max-width: 500px; display: block; margin: 0 auto; margin-bottom: 20px;"}
@@ -385,6 +407,7 @@ This one predisposes me to think about the data positively.
 - Datawrapper
 - RAWGraphs
 - Tableau
+- AI2HTML
 :::
 
 ::::
@@ -392,6 +415,20 @@ This one predisposes me to think about the data positively.
 ::: {.notes}
 The final question is: how do I get this on the web so that other people can read and interact with it?
 :::
+
+---
+
+:::: {.columns style="display: flex; align-items: center; justify-content: center;"}
+
+::: {.column width="50%"}
+![](images/revenue1.png)
+:::
+
+::: {.column width="50%"}
+![](images/revenue2.png)
+:::
+
+::::
 
 ---
 
@@ -412,6 +449,10 @@ The final question is: how do I get this on the web so that other people can rea
 [You Draw It: Just How Bad<br>Is the Drug Overdose Epidemic?]{style="text-align: center; display: block; margin-bottom: 20px;"}
 
 ![](images/youdraw.png){style="display: block; margin: 0 auto;"}
+
+::: {.notes}
+Interactivity allows you to draw the reader in and participate in the story.
+:::
 
 # Data stories for the <span style="color: var(--color-purple);">public good</span>
 
